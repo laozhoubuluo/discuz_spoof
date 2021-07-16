@@ -1,0 +1,31 @@
+/* Spoof 核心 CSS */
+
+/* 全局样式设置 */
+* {
+	animation: glbani .5s infinite !important;
+	background-color: #000000 !important;
+	border-color: #000000 !important
+}
+
+/* 图片均反色 */
+img, .nav a {
+	background-color: #ffffff !important;
+	filter: invert(1) !important;
+}
+
+/* 特殊位置样式清除 */
+.ct2_a, .ct3_a, #hd, #toptb, .pc_inner, #controlpanel, #nv, #scbar_btn, .bm_h {
+	background-image: none !important;
+	background: none !important;
+	background-color: #000000 !important;
+}
+
+/* 闪烁动画，感谢 @popcorner */
+@keyframes glbani {
+	0% {color: #ff0000;}
+	20% {color: #ffa500;}
+	40% {color: #ffff00;}
+	60% {color: #00ff00;}
+	80% {color: #0000ff;}
+	100% {color: #ff0000;}
+}
